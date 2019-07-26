@@ -1,1 +1,8 @@
-class BackGroud
+class BackGround
+{
+
+    function BackGround()
+    {
+        
+    }
+}
