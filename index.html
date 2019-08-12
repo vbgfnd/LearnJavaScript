@@ -7,12 +7,23 @@
 </head>
 <body>
     <!--<script src="test.js"></script>-->
-<div class="parentdiv">
-    <div class="div1"></div>
-    <div class="div1">
-        <img id="img" style="overflow:hidden" src="./background.jpeg">
+<div>
+    <div class="column">
+        <img class="img-hide" src="./background.jpeg">
     </div>
-    <div class="div1"></div>
+    <div class="column">
+        <div class="div-branch">
+            <img id="img-background" src="./background.jpeg">
+        </div>
+        <div class="div-master">
+            <img id="img-background" src="./background.jpeg">
+        </div>
+    </div>
+    <div class="column">
+        <img class="img-hide" src="./background.jpeg">
+    </div>
+
+</div>
 </div>
 </body>
 </html>

@@ -1,21 +1,33 @@
-#img
+.img-hide
 {
     position:relative;
     top:100px;    
     border: 5px solid green;
     padding: 5px;
     margin: 5px;
-
+    text-align:center;
+    visibility:hidden;
 }
-.div1
+.img-background
+{
+    position:relative;
+    top:100px;    
+    border: 5px solid green;
+    padding: 5px;
+    margin: 5px;
+    text-align:center;
+}
+.column
 {
     float:left;
-    width: 30%;
-    height:100%;
+    width: 33.33%;
+    text-align:center;
 }
-.parentdiv
+.div-master
 {
-    height:700px;
+    height:auto;
 }
-
-body {height:100%;}
+.div-branch
+{
+    height:50px;
+}
