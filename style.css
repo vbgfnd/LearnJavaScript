@@ -1,21 +1,14 @@
 .img-hide
 {
-    position:relative;
-    top:100px;    
-    border: 5px solid green;
-    padding: 5px;
-    margin: 5px;
     text-align:center;
     visibility:hidden;
 }
 .img-background
 {
     position:relative;
-    top:100px;    
-    border: 5px solid green;
-    padding: 5px;
-    margin: 5px;
+    bottom:-100px;    
     text-align:center;
+    bottom:0px;
 }
 .column
 {
@@ -26,8 +19,4 @@
 .div-master
 {
     height:auto;
-}
-.div-branch
-{
-    height:50px;
 }
