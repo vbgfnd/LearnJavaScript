@@ -1,13 +1,17 @@
 function test()
 {
-    window.setInterval(BckGroundMove(),1000);
+    //window.setInterval(BckGroundMove,10000);
+    BckGroundMove();
 }
 function BckGroundMove() : any
 {
-    let ele : any = document.getElementById("id-img-background");
-    let img_style : any = window.getComputedStyle(ele, null);
-    console.log(img_style.bottom);
-    console.log("ddd");
+    let imgElement : any = document.getElementById("id-img-background");
+    let imgStyle : any = window.getComputedStyle(imgElement, null);
+    //del 'px' in strBot
+    let strBot : string = imgStyle.bottom.replace("px", "");
+    let intBot : number = Number(strBot);
+    console.log(Object.prototype.toString.call(intBot));
+
     //document.getElementById("id-img-background").style.bottom=bottom_num;
 }
 test();
