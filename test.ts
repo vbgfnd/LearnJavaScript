@@ -1,7 +1,12 @@
-function test()
+function test() : any
 {
-    window.setInterval(BckGroundMove,1000);
+    //window.setInterval(BckGroundMove,1000);
+    console.log("111");
     //BckGroundMove();
+}
+function test1() : any
+{
+    console.log("222");
 }
 function BckGroundMove() : any
 {
@@ -16,3 +21,4 @@ function BckGroundMove() : any
     //document.getElementById("id-img-background").style.bottom=bottom_num;
 }
 test();
+test1();

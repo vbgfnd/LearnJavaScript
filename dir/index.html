@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html onclick=alert(event.eventPhase)>
+<head>
+    <meta charset="utf-8">
+    <title>testtest</title>
+    <link rel="stylesheet" type="text/css" href="style.scc">
+</head>
+<body onclick=alert(event.eventPhase)>
+    <script>
+        document.onclick=function (){console.log("document"); alert(event.eventPhase)}
+        function button1()
+        {
+            console.log(this);
+        }
+    </script>
+    <div id="d1" onclick=alert(event.eventPhase)>
+        <div id="d2" onclick=alert(event.eventPhase)>
+            <div id="d3" onclick=alert(event.eventPhase)>
+                <button id="bot"  onclick=alert(event.eventPhase) value="aaa">click me!</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
