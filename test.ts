@@ -20,5 +20,30 @@ function BckGroundMove() : any
     console.log(imgElement.style.bottom);
     //document.getElementById("id-img-background").style.bottom=bottom_num;
 }
-test();
-test1();
+
+function GetElementPos(element)
+{
+    let dv : any = document.getElementById("display");
+    let dv1 : any = document.getElementById("display1");
+    let actualLeft : any = element.offsetLeft;
+    let current : any = element.offsetParent;
+    console.log(current);
+    console.log(actualLeft);
+    while(current !== null)
+    {
+        actualLeft += current.offsetLeft;
+        current = current.offsetParent;
+    }
+
+    let actualY : any = element.offsetTop;
+    let currentY : any = element.offsetParent;
+    console.log(currentY);
+    console.log(actualY);
+    while(currentY !== null)
+    {
+        actualY += currentY.offsetTop;
+        currentY = currentY.offsetParent;
+    }
+    dv.innerHTML = ("X,Y=(" + actualLeft + "," + actualY + ")");
+    dv1.innerHTML = ("X,Y=(" + actualLeft + "," + actualY + ")");
+}     

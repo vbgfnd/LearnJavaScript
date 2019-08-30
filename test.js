@@ -17,5 +17,25 @@ function BckGroundMove() {
     console.log(imgElement.style.bottom);
     //document.getElementById("id-img-background").style.bottom=bottom_num;
 }
-test();
-test1();
+function GetElementPos(element) {
+    var dv = document.getElementById("display");
+    var dv1 = document.getElementById("display1");
+    var actualLeft = element.offsetLeft;
+    var current = element.offsetParent;
+    console.log(current);
+    console.log(actualLeft);
+    while (current !== null) {
+        actualLeft += current.offsetLeft;
+        current = current.offsetParent;
+    }
+    var actualY = element.offsetTop;
+    var currentY = element.offsetParent;
+    console.log(currentY);
+    console.log(actualY);
+    while (currentY !== null) {
+        actualY += currentY.offsetTop;
+        currentY = currentY.offsetParent;
+    }
+    dv.innerHTML = ("X,Y=(" + actualLeft + "," + actualY + ")");
+    dv1.innerHTML = ("X,Y=(" + actualLeft + "," + actualY + ")");
+}
